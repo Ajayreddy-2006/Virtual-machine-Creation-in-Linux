@@ -1,7 +1,7 @@
  # VIRTUAL MACHINE CREATION IN LINUX
  
 #### REG NUMBER: 212223230007
-#### NAME: Y Ajay
+#### NAME: T Ajay
 
 ## AIM
 
