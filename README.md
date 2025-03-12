@@ -1,75 +1,138 @@
  # VIRTUAL MACHINE CREATION IN LINUX
-  ## AIM
-  To Install Virtualbox / VMware Workstation with different flavours of linux.
+ 
+#### REG NUMBER: 212223230007
+#### NAME: Y Ajay
+
+## AIM
+
+To Install Virtualbox / VMware Workstation and execute basic Linux commands like pwd, mkdir, ls, date, cat, and writing a Bash script to perform arithmetic operations and read a file from the terminal.
+
 ## PROBLEM STATEMENT
-  Explain about the Experiment.
+
+Manually executing basic Linux tasks like file management, navigation, and arithmetic operations can be inefficient. This experiment aims to automate these tasks using Bash scripting, including:
+1. Displaying the current directory, files, and system date.
+2. Reading and displaying file contents.
+3. Performing basic arithmetic operations.
+
+## REQUIREMENTS
+- Oracle VM VirtualBox Manager
+- Kali Linux
+- Mousepad (Text Editor)
+- Terminal
 
 ## ALGORITHM
- ### Steps 1:
+ ### Step 1: 
  Open the terminal in Kali Linux.
- ### Steps 2:
+ ### Step 2:
  Use basic Linux commands to navigate and manage files.
- ### Steps 3:
+ ### Step 3:
  Create a Bash script using Mousepad.
- ### Steps 4:
+ ### Step 4:
  Write a script that performs arithmetic operations and reads a file.
- ### Steps 5:
- Make the script executable. 
- ### Steps 6:
+ ### Step 5:
+ Make the script executable.
+ ### Step 6:
  Run the script and observe the output.
+ 
 ## COMMANDS
-Include the commands used in the Experiment.
 
-check for current working directory:
+###  Execute Basic Linux Commands in the Terminal
+#### Check the Current Working Directory
 ```
 pwd
 ```
-make a directory named experiment :
+#### Create a New Directory
 ```
-mkdir experiment
-```
-change directory to experiment:
-```
-cd experiment
-```
-create a file named, add.sh:
-```
-nano add.sh
-```
-make the file executable:
-```
-chmod +x add.sh
-```
-rum the file:
-```
-./add.sh
-```
-include the code inside the file add.sh:
-```
-echo enter a:
-read a
-echo enter b:
-read b
-echo the sum is : $((a+b))
+mkdir my_experiment
 ```
 
-## OUTPUT:
-### Virtualization:
-![image](https://github.com/user-attachments/assets/3be2d025-255b-46d2-b7b6-4aa14412d915)
+#### Navigate into the Directory
+```
+cd my_experiment
+```
+#### List the Files in the Directory
+```
+ls
+```
 
-### file input:
-![WhatsApp Image 2025-03-05 at 10 47 55_e910ad60](https://github.com/user-attachments/assets/a4dc9e15-e275-4a9f-b470-3dc007804720)
+#### Write Some Text into the File
+```
+echo "Hello, this is a test file." > myfile.txt
+```
 
-### script:
-![WhatsApp Image 2025-03-05 at 10 47 56_edc9889d](https://github.com/user-attachments/assets/81f5bbe5-5e9f-4c93-85c8-8897d10f3330)
+#### Read the File Contents
+```
+cat myfile.txt
+```
+#### Get the Current Date and Time
+```
+date
+```
+
+###  Writing a Bash Script in Mousepad
+#### Open Mousepad
+```
+mousepad myscript.sh &
+```
+
+#### Write the Bash Script
+
+```
+#!/bin/bash 
+
+echo "Current Directory:"
+pwd
+
+echo "Files in this directory:"
+ls
+
+echo "Current Date and Time:"
+date
+
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+
+sum=$((num1 + num2))
+diff=$((num1 - num2))
+prod=$((num1 * num2))
+quot=$((num1 / num2))
+rem=$((num1 % num2))
+
+echo "Sum: $sum"
+echo "Difference: $diff"
+echo "Product: $prod"
+echo "Quotient: $quot"
+echo "Remainder: $rem"
 
 
-### REG NUMBER: 212223230007
-### NAME: T Ajay
+```
+####  Make the Script Executable
+```
+chmod +x myscript.sh
+```
 
-## RESULT:
-we successfully setup a virtual machine and performed some arthematic operations.
- 
+#### Run the Script
+```
+./myscript.sh
+```
+
+## OUTPUT
+
+Configuration of Kali Linux on Oracle Virtual Box :
+
+![Screenshot 2025-03-11 134850](https://github.com/user-attachments/assets/7481ebf5-8edd-4cb2-87cc-e8e64ec9cafc)
+
+
+Output : 
+![image](https://github.com/user-attachments/assets/cc481926-bcfc-4901-b74d-7f5c76beabd5)
+![image](https://github.com/user-attachments/assets/ddc08a53-e155-4a5c-afa4-d4a9429696d3)
+![Screenshot 2025-03-11 133403](https://github.com/user-attachments/assets/a30e5d51-d55c-4ea1-8a39-6bc60e80b50b)
+
+
+
+
+## RESULT
+Thus, this experiment helped in understanding the fundamentals of Linux commands and Bash scripting for automation and system management.
 
   
 
